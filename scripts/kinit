@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+./krb5/bin/kinit $SHELLUSR@`echo $DOMAIN | tr [:lower:] [:upper:]`
