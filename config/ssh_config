@@ -1,0 +1,23 @@
+Host hookbill
+User holbrook
+Hostname hookbill.arsc.edu
+
+Host magpie
+User holbrook
+Hostname magpie.arsc.edu
+
+Host mallard
+User holbrook
+Hostname mallard.arsc.edu
+
+Host puffin
+User holbrook
+Hostname puffin.arsc.edu
+
+Host ruddy
+User holbrook
+Hostname ruddy.arsc.edu
+
+Host wood
+User holbrook
+Hostname wood.arsc.edu
