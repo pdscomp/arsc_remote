@@ -14,4 +14,4 @@ export CONFIGFILE
 PATH=./scripts:$PATH
 export PATH
 
-kshell
+./krb5/bin/kshell
