@@ -33,8 +33,8 @@ enabled.
 
     c. To implement all this, I just added the following to my .bash_profile:
 
-    PATH=$HOME/bin/krb5/bin:$HOME/bin:$PATH; export PATH
-    KRB5_CONFIG=$HOME/bin/krb5/krb5.conf; export KRB5_CONFIG
+        PATH=$HOME/bin/krb5/bin:$HOME/bin:$PATH; export PATH
+        KRB5_CONFIG=$HOME/bin/krb5/krb5.conf; export KRB5_CONFIG
 
 3. To actually use this stuff:
 
