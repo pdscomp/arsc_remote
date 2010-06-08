@@ -9,10 +9,7 @@ with the least amount of heartache.
 
 ##TODO:##
 
-<strike>11. Make gkshell open up a kshell'd gnome-terminal.</strike>
-2. kssh script that opens kshell, kinit and /then/ ssh ?
-3. kscp script that does same ?
-4. Find some way to automate the krb5/ssh downloads.
+* Find some way to automate the krb5/ssh downloads.
 
 ##DIRECTIONS:##
 
@@ -60,13 +57,16 @@ enabled.
     *ssh_config_gen.py*, a simple python script that may make generating a 
     bunch of similar hosts easier.
 
-    f. I've noticed that a lot of these changes don't take effect until I at
+    f. *(optional)* Either copy the included *gkshell* to ~/bin or make 
+    a ln -s to wherever you want to put it.
+
+    g. I've noticed that a lot of these changes don't take effect until I at
     least log out and back in. I had to reboot anyway, so that's what I did.
     ymmv.
 
 3. To actually use this stuff:
 
-    a. Run kshell in a terminal. It's some kinda security sandbox thing that
+    a. Run *kshell* in a terminal. It's some kinda security sandbox thing that
     they require you to run everything in. Alternately, run the *gkshell*
     script I included, which pops open a gnome-terminal running kshell.
 
