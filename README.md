@@ -21,12 +21,15 @@ enabled.
 
 2. 
     a. In order to use the krb5 files, add the /bin to your path and point the
-KRB5_CONFIG variable to krb5.conf.  
+    KRB5_CONFIG variable to krb5.conf.  
 
     b. The easiest way to get the ossh bundle working is to run install.user as
     yourself. Then, if it's not already there, you should add ~/bin to your 
     PATH. Moreover, ~/bin should be placed early in your path, so that you 
-    don't end up trying to run /usr/bin/ssh when you mean to run ~/bin/ssh.
+    don't end up trying to run /bin/ssh when you mean to run ~/bin/ssh.
+    In fact, the ~/.ssh/ssh.config that comes with hpcmp's ssh has options that 
+    *break* regular ssh. If you get configuration errors, try **which ssh** to
+    check for that issue.
 
     c. To implement all this, I just added the following to my .bash_profile:
 
