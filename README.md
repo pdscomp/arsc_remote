@@ -19,14 +19,18 @@ describe how to get everything rolling with the least amount of heartache.
 javascript-enabled browser---that is, wget doesn't work, even with https action
 enabled.
 
-2. In order to use the krb5 files, add the /bin to your path and point the
-KRB5_CONFIG variable to krb5.conf .  The easiest way to get the ossh bundle
-working is to run install.user as yourself. Then, if it's not already there,
-you should add ~/bin to your PATH.
+2. 
+    a. In order to use the krb5 files, add the /bin to your path and point the
+KRB5_CONFIG variable to krb5.conf.  
 
-To implement all this, I just added the following to my .bash_profile:
+    b. The easiest way to get the ossh bundle working is to run install.user as
+    yourself. Then, if it's not already there, you should add ~/bin to your 
+    PATH. Moreover, ~/bin should be placed early in your path, so that you 
+    don't end up trying to run /usr/bin/ssh when you mean to run ~/bin/ssh.
 
-    PATH=$HOME/bin/krb5/bin:$PATH:$HOME/bin; export PATH
+    c. To implement all this, I just added the following to my .bash_profile:
+
+    PATH=$HOME/bin/krb5/bin:$HOME/bin:$PATH; export PATH
     KRB5_CONFIG=$HOME/bin/krb5/krb5.conf; export KRB5_CONFIG
 
 3. To actually use this stuff:
@@ -38,10 +42,10 @@ To implement all this, I just added the following to my .bash_profile:
         kinit user@DOMAIN.TLD
 
     Enter in your password, use the SecurID, etc. This gives you a krb5 
-    ticket with the ARSC system for xty minutes.
+    ticket with the ARSC system for Xty minutes.
 
     c. You're almost there!
         ssh user@pc.domain.tld
 
-    d. (optional) If you're ever wondering about your ticket status, use 
-    **klist**.
+    d. *(optional)* If you're ever wondering about your ticket status, use 
+    **klist**. I didn't actually find it that useful, though.
