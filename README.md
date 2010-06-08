@@ -27,7 +27,7 @@ enabled.
     yourself. Then, if it's not already there, you should add ~/bin to your 
     PATH. Moreover, ~/bin should be placed early in your path, so that you 
     don't end up trying to run /bin/ssh when you mean to run ~/bin/ssh.
-    In fact, the ~/.ssh/ssh.config that comes with hpcmp's ssh has options that 
+    In fact, the ~/.ssh/config that comes with hpcmp's ssh has options that 
     *break* regular ssh. If you get configuration errors, try **which ssh** to
     check for that issue.
 
@@ -43,7 +43,7 @@ enabled.
 
     Note: You may find my krb5.conf in config/.
 
-    e. Modify the *~/.ssh/ssh_config* file to store some host defaults.
+    e. Modify the *~/.ssh/config* file to store some host defaults.
     For example, I tacked a bunch of little paragraphs like this to my 
     ssh_config:
 
@@ -56,7 +56,10 @@ enabled.
 
     Note: You may find my ssh_config in config/. You may also find 
     *ssh_config_gen.py*, a simple python script that may make generating a 
-    bunch of similar hosts easier.
+    bunch of similar hosts easier. Note that, while there are a lot of files in
+    ~/.ssh (for me, anyway) with "config" in their names (and the example
+    config file is named ssh_config), that ssh looks for **~/.ssh/config** in
+    particular (unless otherwise specified at the command line).
 
     f. *(optional)* Either copy the included *gkshell* to ~/bin or make 
     a ln -s to wherever you want to put it. In addition, I included an icon and
