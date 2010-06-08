@@ -70,7 +70,7 @@ enabled.
 
 3. To actually use this stuff:
 
-    a. Run *kshell* in a terminal. It's some kinda security sandbox thing that
+    a. Run [*kshell*](http://www.afrl.hpc.mil/customer/userdocs/kerberos/man/kshell.html) in a terminal. It's some kinda security sandbox thing that
     they require you to run everything in. Alternately, run the *gkshell*
     script I included, which pops open a gnome-terminal running kshell.
 
