@@ -1,11 +1,11 @@
 ##ABOUT:##
 
-arsc_remote is meant to be a set of tools that makes using the hpcmp krb and 
+arsc_remote was meant to be a set of tools that makes using the hpcmp krb and 
 ssh bundles for *nix (Windows is pretty easy as-is if you don't want X-
-tunneling) less of a pain to use.  Unfortunately, they're such a kludge that
-trying to make it less of a pain is, well, a pain. At the very least, my goal
-is to describe how to get everything rolling with the least amount of 
-heartache.
+tunneling) less of a pain to use.  Ironically, it instead turned out to be 
+a small handfull of tools combined with a README that describes how I set
+everything up for myself. My goal is to describe how to get everything rolling
+with the least amount of heartache.
 
 ##TODO:##
 
@@ -88,3 +88,13 @@ enabled.
 
     d. *(optional)* If you're ever wondering about your ticket status, use 
     **klist**. I didn't actually find it that useful, though.
+
+##UPKEEP##
+
+Every once in a while <https://www.hpcmo.hpc.mil/security/kerberos/> uploads
+new versions of the krb5 and ossh bundles to their website. Unfortunately,
+the bastards don't make automating the download/update process easy, like, at
+all, and even worse, they'll release the Windows version and then say, 
+"unix versions coming soon!!"  It's pretty irritating. Anyways: If stuff breaks,
+check to see if there's a new version (with your javascript-enabled web browser)
+and make with the download when it's time to do so.
