@@ -3,4 +3,4 @@
 #runs kshell in a gnome-terminal.
 #meant to make things easier.
 
-gnome-terminal -e 'kshell'
+gnome-terminal --profile='krb5' -e 'kshell'

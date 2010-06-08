@@ -60,7 +60,9 @@ enabled.
 
     f. *(optional)* Either copy the included *gkshell* to ~/bin or make 
     a ln -s to wherever you want to put it. In addition, I included an icon and
-    a .desktop file, which may be used for a launcher in Gnome.
+    a .desktop file, which may be used for a launcher in Gnome. Finally, 
+    *gkshell* has gnome-terminal look for a custom profile named "krb5," so you
+    can make your kshell window look different, if you like.
 
     g. I've noticed that a lot of these changes don't take effect until I at
     least log out and back in. I had to reboot anyway, so that's what I did.
