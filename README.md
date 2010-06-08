@@ -2,10 +2,10 @@
 
 arsc_remote was meant to be a set of tools that makes using the hpcmp krb and 
 ssh bundles for *nix (Windows is pretty easy as-is if you don't want X-
-tunneling) less of a pain to use.  Ironically, it instead turned out to be 
-a small handfull of tools combined with a README that describes how I set
-everything up for myself. My goal is to describe how to get everything rolling
-with the least amount of heartache.
+tunneling) less of a pain to use.  As fate would have it, however, it instead 
+turned out to be a small handfull of tools combined with a README that 
+describes how I set everything up for myself. My goal is to describe how to get
+everything rolling with the least amount of heartache.
 
 ##TODO:##
 
