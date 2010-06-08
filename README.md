@@ -1,13 +1,15 @@
 ##ABOUT:##
 
 arsc_remote is meant to be a set of tools that makes using the hpcmp krb and 
-ssh less of a pain to use.  Unfortunately, they're such a kludge that trying
-to make it less of a pain is, well, a pain. At the very least, my goal is to
-describe how to get everything rolling with the least amount of heartache.
+ssh bundles for *nix (Windows is pretty easy as-is if you don't want X-
+tunneling) less of a pain to use.  Unfortunately, they're such a kludge that
+trying to make it less of a pain is, well, a pain. At the very least, my goal
+is to describe how to get everything rolling with the least amount of 
+heartache.
 
 ##TODO:##
 
-1. Make gkshell open up a kshell'd gnome-terminal.
+<strike>11. Make gkshell open up a kshell'd gnome-terminal.</strike>
 2. kssh script that opens kshell, kinit and /then/ ssh ?
 3. kscp script that does same ?
 4. Find some way to automate the krb5/ssh downloads.
@@ -36,19 +38,53 @@ enabled.
         PATH=$HOME/bin/krb5/bin:$HOME/bin:$PATH; export PATH
         KRB5_CONFIG=$HOME/bin/krb5/krb5.conf; export KRB5_CONFIG
 
+    d. Modify *~/bin/krb5/krb5.conf to set your default principal to whatever 
+    you want it to be. For example:
+
+        cat krb5.conf | sed s/'default_realm = HPCMP.HPC.MIL'/'default_realm = ARSC.EDU'/ > krb5.conf
+
+    Note: You may find my krb5.conf in config/.
+
+    e. Modify the *~/.ssh/ssh_config* file to store some host defaults.
+    For example, I tacked a bunch of little paragraphs like this to my 
+    ssh_config:
+
+        Host hookbill
+        User holbrook
+        Hostname hookbill.arsc.edu
+
+    This means that if I type **ssh hookbill**, ssh will know that I really 
+    mean **ssh holbrook@hookbill.arsc.edu**. Handy!
+
+    Note: You may find my ssh_config in config/. You may also find 
+    *ssh_config_gen.py*, a simple python script that may make generating a 
+    bunch of similar hosts easier.
+
+    f. I've noticed that a lot of these changes don't take effect until I at
+    least log out and back in. I had to reboot anyway, so that's what I did.
+    ymmv.
+
 3. To actually use this stuff:
 
-    a. Run kshell. It's some kinda security sandbox thing that they require you
-    to run everything in.
+    a. Run kshell in a terminal. It's some kinda security sandbox thing that
+    they require you to run everything in. Alternately, run the *gkshell*
+    script I included, which pops open a gnome-terminal running kshell.
 
     b. Typetty-type:
-        kinit user@DOMAIN.TLD
+        kinit user[@REALM]
 
     Enter in your password, use the SecurID, etc. This gives you a krb5 
-    ticket with the ARSC system for Xty minutes.
+    ticket with the ARSC system for Xty minutes. Changing your default realm 
+    means that typing the @REALM part is no longer necessary.
 
     c. You're almost there!
-        ssh user@pc.domain.tld
+        ssh host
+
+    Remember, because the ssh_config file was modified, you don't have to type
+    the whole shebang anymore! AWESOME
+
+        * ALSO: To tunnel X (of limited utility imo), run
+            ssh -XY host
 
     d. *(optional)* If you're ever wondering about your ticket status, use 
     **klist**. I didn't actually find it that useful, though.

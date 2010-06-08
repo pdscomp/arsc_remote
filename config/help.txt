@@ -1,5 +1,0 @@
-
-kinit: Get a ticket!
-ssh <computername> : Log onto an ARSC workstation!
-lolwat: See this!
-
