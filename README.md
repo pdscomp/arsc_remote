@@ -30,6 +30,7 @@ To implement all this, I just added the following to my .bash_profile:
     KRB5_CONFIG=$HOME/bin/krb5/krb5.conf; export KRB5_CONFIG
 
 3. To actually use this stuff:
+
     a. Run kshell. It's some kinda security sandbox thing that they require you
     to run everything in.
 
