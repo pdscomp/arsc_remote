@@ -86,8 +86,7 @@ enabled.
 
     Remember, because the ssh_config file was modified, you don't have to type
     the whole shebang anymore! AWESOME
-
-        * ALSO: To tunnel X (of limited utility imo), run
+      * ALSO: To tunnel X (of limited utility imo), run
             ssh -XY host
 
     d. *(optional)* If you're ever wondering about your ticket status, use 
