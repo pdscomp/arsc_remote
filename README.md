@@ -59,7 +59,8 @@ enabled.
     bunch of similar hosts easier.
 
     f. *(optional)* Either copy the included *gkshell* to ~/bin or make 
-    a ln -s to wherever you want to put it.
+    a ln -s to wherever you want to put it. In addition, I included an icon and
+    a .desktop file, which may be used for a launcher in Gnome.
 
     g. I've noticed that a lot of these changes don't take effect until I at
     least log out and back in. I had to reboot anyway, so that's what I did.
