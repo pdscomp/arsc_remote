@@ -10,6 +10,7 @@ with the least amount of heartache.
 ##TODO:##
 
 * Find some way to automate the krb5/ssh downloads.
+* Test out scp, etc, since I broke it a long time ago.
 
 ##DIRECTIONS:##
 
