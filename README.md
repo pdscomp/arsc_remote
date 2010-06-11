@@ -22,9 +22,9 @@ everything rolling with the least amount of heartache.
 * Find some way to automate the krb5/ssh downloads.
 * Test out scp, etc, since I broke it a long time ago.
 
-#LINUX:#
+#DIRECTIONS:#
 
-##DIRECTIONS:##
+##LINUX:##
 
 1. Download the krb5 and ssh bundles from 
 <https://www.hpcmo.hpc.mil/security/kerberos/>. This requires a 
