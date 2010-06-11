@@ -127,7 +127,7 @@ be portable).
 2. Open *krb5.exe*. This should be pretty self-explanatory. Enter your data, and
 mash "login."
 
-    > Username: [holbrook] Password: [*****] Realm: [ARSC.EDU]  
+    > Username: [holbrook] Password: [******] Realm: [ARSC.EDU]  
     > [Change Password]  **[LOGIN]** [????]
 
     It will prompt you for your security key action, and then you should see a
