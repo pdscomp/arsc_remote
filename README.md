@@ -1,4 +1,4 @@
-###ABOUT:###
+#ABOUT:#
 
 I've been using ssh and typical Linux package management for a while, but
 HPCMP's ssh/kerberos system (which I was using with [ARSC](http://www.arsc.edu)
@@ -17,12 +17,12 @@ turned out to be a small handfull of tools combined with a README that
 describes how I set everything up for myself. My goal is to describe how to get
 everything rolling with the least amount of heartache.
 
-###TODO:###
+#TODO:#
 
 * Find some way to automate the krb5/ssh downloads.
 * Test out scp, etc, since I broke it a long time ago.
 
-###LINUX:###
+#LINUX:#
 
 ##DIRECTIONS:##
 
@@ -163,7 +163,7 @@ mash "login."
     [ARSC's web page on the subject](http://www.arsc.edu/support/howtos/UsingXming.html)
     should be able to get you going.
 
-###UPKEEP:###
+#UPKEEP:#
 
 Every once in a while <https://www.hpcmo.hpc.mil/security/kerberos/> uploads
 new versions of the krb5 and ossh bundles to their website. Unfortunately,
