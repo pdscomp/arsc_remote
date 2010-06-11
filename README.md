@@ -127,31 +127,31 @@ be portable).
 2. Open *krb5.exe*. This should be pretty self-explanatory. Enter your data, and
 mash "login."
 
-> Username: [holbrook] Password: [*****] Realm: [ARSC.EDU]
-> [Change Password]  **[LOGIN]** [????]
+    > Username: [holbrook] Password: [*****] Realm: [ARSC.EDU]  
+    > [Change Password]  **[LOGIN]** [????]
 
-It will prompt you for your security key action, and then you should see a
-scalding-bright green [TICKET} in the window. Now you can close *krb5.exe*. You
-don't need that shit no more.
+    It will prompt you for your security key action, and then you should see a
+    scalding-bright green [TICKET} in the window. Now you can close *krb5.exe*. You
+    don't need that shit no more.
 
 3. Open *putty.exe*.
 
     a. *(optional but handy)* Setup:
-        * Under "Host Name," type in the name of the computer you want to 
+      * Under "Host Name," type in the name of the computer you want to 
           login to, eg. "mallard.arsc.edu."
-        * Click "Connection-->Data" on the left-panel tree. You should see a
+      * Click "Connection-->Data" on the left-panel tree. You should see a
           box that says, "Auto-login Username." Type your username in there.
-        * Go back to the "Session" panel (click it on the left-panel tree).
+      * Go back to the "Session" panel (click it on the left-panel tree).
           Type a memorable name in the "Saved Sessions" box (eg. "mallard") and
           then mash "Save" next to that.
-        * What did that just do? It saved the information that you would type
+      * What did that just do? It saved the information that you would type
           every time you want to log into that computer otherwise, and made it
           easy to use next time!
 
     b. 
-        * *If you chose to complete step 3a)*: Double-click the computer's
+      * *If you chose to complete step 3a)*: Double-click the computer's
           entry in the saved sessions list.
-        * *If you chose **NOT** to complete step 3a)*: Under "Host Name," type
+      * *If you chose **NOT** to complete step 3a)*: Under "Host Name," type
           in the name of the computer you want to login to, 
           eg. "mallard.arsc.edu," then hit "Connect." Putty will prompt you
           for your username.
